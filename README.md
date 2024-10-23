@@ -125,5 +125,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-- TIER Model mathematical foundation by Vitor André Gehrke
+- TIER Model mathematical foundation by Vitor André Gehrke (TBA to the documents)
 - UI components from [shadcn/ui](https://ui.shadcn.com/)
