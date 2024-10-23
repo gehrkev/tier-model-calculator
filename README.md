@@ -1,36 +1,129 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TIER Model Calculator
+
+A web-based calculator for analyzing Time-Income Efficiency Ratios (TIER) to help evaluate different income scenarios and work-life balance decisions.
+
+## Overview
+
+The TIER Model Calculator helps you compare different work situations by calculating a ratio that measures how efficiently you're using your time to generate income. It takes into account both active income (requiring your time) and passive income (not requiring ongoing time investment).
+
+The calculator compares two scenarios:
+- Your current situation
+- A potential new offer or alternative scenario
+
+For each scenario, you can input:
+- Passive Income (monthly)
+- Active Income (monthly)
+- Work Hours per Day
+- Work Days per Month
+
+## Key Features
+
+- Interactive comparison of two income scenarios
+- Automatic calculation of TIER ratios
+- Visual representation of results through charts
+- Detailed breakeven analysis
+- Responsive design for desktop and mobile use
+- Clean, light theme interface
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
+- Node.js 18.0 or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/gehrkev/tier-model-calculator.git
+cd tier-model-calculator
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create a production build:
 
-## Learn More
+```bash
+npm run build
+# or
+yarn build
+```
 
-To learn more about Next.js, take a look at the following resources:
+The built files will be in the `out` directory.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Understanding the Results
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The calculator provides several key pieces of information:
 
-## Deploy on Vercel
+1. TIER Ratio (R value)
+   - Lower values indicate better time-income efficiency
+   - R = 0 represents pure passive income (theoretically optimal)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. Comparison Analysis
+   - Whether the new offer improves your time-income efficiency
+   - Breakeven points for different variables
+   - Required adjustments to match current efficiency
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Visual Representations
+   - Bar charts comparing income and hours
+   - Clear indicators of efficiency improvements or declines
+
+## Project Structure
+
+```
+src/
+├── app/                   # Next.js app directory
+├── components/           
+│   ├── NumericInput.tsx  # Reusable numeric input component
+│   ├── ResultsCard.tsx   # Results display component
+│   ├── ResultsChart.tsx  # Data visualization component
+│   ├── SituationCard.tsx # Input form component
+│   └── ui/               # Base UI components
+├── lib/
+│   ├── calculations.ts   # TIER model calculations
+│   └── utils.ts          # Utility functions
+```
+
+## Technology Stack
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Recharts](https://recharts.org/) - Data visualization
+- [shadcn/ui](https://ui.shadcn.com/) - UI components
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## Acknowledgments
+
+- TIER Model mathematical foundation by Vitor André Gehrke
+- UI components from [shadcn/ui](https://ui.shadcn.com/)
