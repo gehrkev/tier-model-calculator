@@ -63,7 +63,7 @@ export function ResultsCard({ result, current, offer }: ResultsCardProps) {
                 {result.offerR === 0 && (
                     <p className="mt-4">
                         The offer consists of only passive income. This is the optimal scenario
-                        as you're earning money without time investment. However, keep in mind that in real life,
+                        as you&apos;re earning money without time investment. However, keep in mind that in real life,
                         passive income often requires some time for management and maintenance.
                     </p>
                 )}

@@ -31,7 +31,7 @@ export function ResultsExplanation({ offerComparison }: ResultsExplanationProps)
     return (
         <>
             <p className="mb-4">
-                The R value shows how efficiently you're using your time to earn money. While it can be tricky
+                The R value shows how efficiently you&apos;re using your time to earn money. While it can be tricky
                 to understand at first, it measures the relationship between your total income (both passive
                 and active) and the time invested in active income. A lower R means better efficiency - like
                 a golf score, the lower the better.
