@@ -5,6 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/tier-model-calculator',
+  assetPrefix: '/tier-model-calculator',
 }
 
 module.exports = nextConfig
